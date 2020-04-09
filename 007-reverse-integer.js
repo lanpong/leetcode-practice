@@ -22,17 +22,16 @@
  * @return {number}
  */
 var reverse = function(x) {
-    let sum = 0;
-    while (x !== 0) {
-        if (x > 0) {
-            sum = sum*10 + x%10;
-            x = Math.floor(x/10);
-        } 
-        if (x < 0) {
-            sum = sum*10 + x%10;
-            x = Math.ceil(x/10);
-        }
-        
+  let sum = 0;
+  while (x !== 0) {
+    if (x > 0) {
+      sum = sum * 10 + (x % 10);
+      x = Math.floor(x / 10);
     }
-    return (sum <= 0x7fffffff && sum >= -0x80000000) ? sum : 0;
+    if (x < 0) {
+      sum = sum * 10 + (x % 10);
+      x = Math.ceil(x / 10);
+    }
+  }
+  return sum <= 0x7fffffff && sum >= -0x80000000 ? sum : 0;
 };

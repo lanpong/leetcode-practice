@@ -31,7 +31,7 @@
 
 // Input: "words and 987"
 // Output: 0
-// Explanation: The first non-whitespace character is 'w', which is not a numerical 
+// Explanation: The first non-whitespace character is 'w', which is not a numerical
 //              digit or a +/- sign. Therefore no valid conversion could be performed.
 // Example 5:
 
@@ -46,6 +46,6 @@
  * @return {number}
  */
 var myAtoi = function(str) {
-    let match = str.match(/^ *([+-]{0,1}[0-9]+)/);
-    return match ? Math.min(2147483647, Math.max(-2147483648, match[1])) : 0;
+  let match = str.match(/^ *([+-]{0,1}[0-9]+)/);
+  return match ? Math.min(2147483647, Math.max(-2147483648, match[1])) : 0;
 };
