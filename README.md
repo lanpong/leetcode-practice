@@ -1,3 +1,3 @@
 # leetcode-practice
 
-practice in leetcode
+practice in leetcode with JavaScript
