@@ -36,7 +36,7 @@
  * @return {TreeNode}
  */
 var invertTree = function (root) {
-  var stack = [root];
+  let stack = [root];
 
   while (stack.length) {
     let n = stack.pop();
